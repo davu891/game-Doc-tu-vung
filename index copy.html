@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flags Game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h3>
+      <div id="countdown"></div>
+    </h3>
+    <div class="additional-container">
+      <div class="column">
+        <div id="question-index" class="question-index">Câu 1</div>
+
+      </div>
+      <div class="column">
+        <div id="correct-count" class="correct-count">Đúng:0/4 câu <span id="total-correct-answers"></span></div>
+      </div>
+      <div class="column">
+        <div id="percentage-container">
+          Điểm: 0/0câu<span id="percentage"></span>
+        </div>
+      </div>
+      <div class="column">
+        <div id="anotherContainer"></div>
+      </div>
+    </div>
+    <div id="anotherContainer"></div>
+
+    <div id="popup-overlay" class="popup-overlay hide">
+      <div id="popup-content">
+        <h2>Bạn có muốn Thoát Quiz?</h2>
+
+        <div id="popup-buttons">
+          <button id="confirm-button">Có</button>
+          <button id="cancel-button">Không</button>
+        </div>
+      </div>
+      <div id="popup-content2">
+        <p id="popup-percentage"></p>
+        <p id="popup-message"></p>
+      </div>
+    </div>
+
+    <div id="result-container"></div> <!-- Thêm container cho kết quả -->
+    <!-- Các phần tử khác của container -->
+
+
+
+    <div class="draggable-objects"></div>
+    <div class="drop-points"></div>
+    <div id="button-container">
+      <button id="submit" style="display: none;">Submit</button>
+      <button id="restart-button" class="hide">Retry</button>
+      <button id="next-button" style="display: none;">Next</button>
+      <button id="end" style="display: none;">End</button>
+      <button id="end-quiz-button" style="display: none;">Quit Game</button>
+    </div>
+  </div>
+  <div class="controls-container">
+    <p id="result"></p>
+    <button id="start">Start Game</button>
+  </div>
+
+  <div class="end-screen">
+    <h2>Kết thúc</h2>
+    <p>Tổng điểm: <span id="total-correct-answers"></span></p>
+    <div id="incorrect-answers">
+      <h3>Các câu trả lời sai:</h3>
+      <ul id="incorrect-answers-list"></ul>
+    </div>
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
